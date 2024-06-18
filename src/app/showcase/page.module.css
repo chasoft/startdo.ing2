@@ -1,0 +1,32 @@
+.hover-effect::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: blue;
+	height: 50%;
+	opacity: 0.1;
+	transition: height 0.3s ease;
+}
+
+.hover-effect:hover::before {
+	height: 100%;
+	opacity: 0.2;
+}
+
+.dark .hover-effect::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: yellow;
+	height: 50%;
+	opacity: 0.1;
+	transition: height 0.3s ease;
+}
+
+.dark .hover-effect:hover::before {
+	opacity: 0.3; /* Adjust opacity on hover for dark mode */
+}
